@@ -32,14 +32,9 @@ Open the live demo in any modern browser:
 
 ## Installation / Run locally
 
-1. Clone the repository (or download the project ZIP):
+1. Clone the repository (or download the project ZIP)
 
-```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
-```
-
-2. Open the project in your browser:
+3. Open the project in your browser:
 
 * Double-click `index.html`, **or**
 * Serve it with a simple static server (recommended for extensions or CORS):
