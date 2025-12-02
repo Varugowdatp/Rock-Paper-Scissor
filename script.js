@@ -11,21 +11,21 @@ const genComputerChoice=()=>{
 }
 const drawGame=()=>{
     console.log("draw");
-    msgs.innerText="Game Draw 😒 Play again";
+    msgs.innerText="Game Draw 😒 ";
     msgs.style.backgroundColor="orange";
 }
 const showWinner=(userWin,userChoice,compChoice)=>{
     if(userWin){
         userScore++;
         userScorePara.innerText=userScore;
-        msgs.innerText=`You Win 😎Your ${userChoice} beats ${compChoice}`;
+        msgs.innerText=`You Win 😎\n \n Your ${userChoice} beats ${compChoice}`;
         msgs.style.backgroundColor="green";
         console.log("u win");
 
     }else{
         compScore++;
         compScorepara.innerText=compScore;
-        msgs.innerText=`You lose 🫤 ${compChoice} beats your ${userChoice}`;
+        msgs.innerText=`You lose 🫤\n\n ${compChoice} beats your ${userChoice}`;
           msgs.style.backgroundColor="red";
         console.log("u lose");
     }
@@ -55,4 +55,5 @@ choices.forEach((choice)=>{
         console.log(" user choice",userChoice);
         playGame(userChoice);
     });
+
 });
